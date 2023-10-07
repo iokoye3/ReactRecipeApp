@@ -1,0 +1,123 @@
+* {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 0;
+    font-family: 'Calibri';
+}
+.nav ul {
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    padding-left: 25px;
+}
+.nav ul li {
+    list-style-type: none;
+}
+.recipedisplay {
+    display: inline-table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+}
+.recipedisplay img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.recipedisplay p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.recipesinput input[type=text] {
+    border-style: none;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.recipesinput button {
+    font-weight: bold;
+    border-style: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+.recipesinput {
+    display: inline-flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.recipesdrop {
+    position: relative;
+}
+.showmore button {
+    border-style: none;
+    color: red;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.empty {
+    font-size: 32px;
+    font-weight: bold;
+}
+.randomdisplay {
+    margin-top: 25px;
+}
+.randomdisplay img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.another {
+    border-style: none;
+    color: red;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.another:hover {
+    text-decoration: underline;
+}
+.randomdisplay a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.recipedisplay a {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+.recipedisplay a:hover {
+    color: red;
+}
+.randomdisplay a:hover {
+    color: red;
+}
+.recipesdrop ul {
+    position: absolute;
+    display: inline-block;
+    overflow-y: auto;
+    top: 100%;
+    max-height: 150px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+.recipesdrop ul li {
+    background-color: white;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    cursor: pointer;
+}
+.recipesdrop ul li:hover {
+    color: red;
+}
+@media screen and (max-width: 768px) {
+    .recipedisplay {
+        width: 50%;
+    }
+}
